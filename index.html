@@ -32,7 +32,7 @@
     <header></header>
     <main class="font-manrope">
       <!-- banner section start -->
-      <section class="co">
+      <section class="mr-5 ml-5">
         <div class="carousel w-full">
           <div id="slide1" class="carousel-item relative w-full">
             <img src="Images/banner-1.png" class="w-full" />
@@ -67,15 +67,19 @@
       <!--professional hockey  club section start  -->
 
       <section>
-        <div class="flex flex-col items-center border-t border-b mt-10">
+        <div
+          class="flex flex-col items-center border-t border-b border-dashed mt-10 mr-5 ml-5"
+        >
           <h1 class="text-2xl font-extrabold">Professional Hockeys Club</h1>
           <p>
             Dit amet consectetur. Condimentum dignissim adipiscing aliquam
             turpis placerat dolor. Purus urna in sit nullam proin.
           </p>
         </div>
-        <div class="flex flex-col lg:flex-col gap-6 mt-5 items-center">
-          <div class="flex flex-col items-center">
+        <div
+          class="flex flex-col lg:flex-col gap-6 mt-12 items-center lg:grid lg:grid-cols-4"
+        >
+          <div class="flex flex-col items-center text-center">
             <div
               class="radial-progress text-primary"
               style="--value: 87"
@@ -92,7 +96,7 @@
             </div>
           </div>
 
-          <div class="flex flex-col items-center">
+          <div class="flex flex-col items-center text-center">
             <div
               class="radial-progress text-primary"
               style="--value: 95"
@@ -109,7 +113,7 @@
             </div>
           </div>
 
-          <div class="flex flex-col items-center">
+          <div class="flex flex-col items-center text-center">
             <div
               class="radial-progress text-primary"
               style="--value: 90"
@@ -126,7 +130,7 @@
             </div>
           </div>
 
-          <div class="flex flex-col items-center">
+          <div class="flex flex-col items-center text-center">
             <div
               class="radial-progress text-primary"
               style="--value: 80"
@@ -146,47 +150,110 @@
       </section>
 
       <!-- program section start -->
-      <div class="flex flex-col gap-6 mt-6 mb-6">
-        <div class="flex flex-col items-center border-t border-b mt-10">
-          <h1 class="text-2xl font-extrabold">Program Sections</h1>
-          <p>
-            Dit amet consectetur. Condimentum dignissim adipiscing aliquam
-            turpis placerat dolor. Purus urna in sit nullam proin.
-          </p>
-        </div>
-        <div class="card bg-base-100 shadow-xl image-full">
-          <figure><img src="Images/program-junior.png" alt="Junior Program" /></figure>
-          <div class="card-body">
-            <h2 class="card-title text-xl font-extrabold">Junior Program</h2>
-            <p class="text-xs font-medium">If a dog chews shoes whose shoes does he choose?</p>
-            <div class="card-actions ">
-              <button class="btn btn-error text-white">Register Now</button>
-            </div>
+      <section>
+        <div
+          class="flex flex-col gap-6 mt-28 mb-6 ml-5 mr-5 lg:grid lg:grid-cols-2"
+        >
+          <div
+            class="flex flex-col p-6 items-center border-t border-b border-dashed mt-10 lg:col-span-2"
+          >
+            <h1 class="text-2xl font-extrabold">Program Sections</h1>
+            <p>
+              Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+              turpis placerat dolor. Purus urna in sit nullam proin.
+            </p>
           </div>
-        </div>
-        <div class="card bg-base-100 shadow-xl image-full">
-          <figure><img src="Images/program-teeanger.png" alt="Teenager Program" /></figure>
-          <div class="card-body">
-            <h2 class="card-title text-xl font-extrabold">Teenager Program</h2>
-            <p class="text-xs font-medium">If a dog chews shoes whose shoes does he choose?</p>
-            <div class="card-actions ">
-              <button class="btn btn-error text-white">Register Now</button>
-            </div>
-          </div>
-        </div>
-        <div class="card bg-base-100 shadow-xl image-full">
-          <figure><img src="Images/program-professional.png" alt="Professional Program" /></figure>
-          <div class="card-body">
-            <h2 class="card-title text-xl font-extrabold">Professional Program</h2>
-            <p class="text-xs font-medium">If a dog chews shoes whose shoes does he choose?</p>
-            <div class="card-actions ">
-              <button class="btn btn-error text-white">Register Now</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
 
-    <footer></footer>
+          <!-- junior -->
+          <div class="card bg-base-100 shadow-xl image-full text-white">
+            <figure>
+              <img
+                class="w-screen h-auto"
+                src="Images/program-junior.png"
+                alt="Junior Program"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title text-xl font-extrabold text-white">
+                Junior Program
+              </h2>
+              <p class="text-xs font-medium text-white">
+                If a dog chews shoes whose shoes does he choose?
+              </p>
+              <div class="card-actions">
+                <button class="btn btn-error text-white">Register Now</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- teenager -->
+          <div class="card bg-base-100 shadow-xl image-full">
+            <figure>
+              <img
+                class="w-screen h-auto"
+                src="Images/program-teeanger.png"
+                alt="Teenager Program"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title text-xl font-extrabold text-white">
+                Teenager Program
+              </h2>
+              <p class="text-xs font-medium text-white">
+                If a dog chews shoes whose shoes does he choose?
+              </p>
+              <div class="card-actions">
+                <button class="btn btn-error text-white">Register Now</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- professional -->
+          <div class="card bg-base-100 shadow-xl image-full lg:col-span-2">
+            <figure>
+              <img
+                class="w-screen h-auto"
+                src="Images/program-professional.png"
+                alt="Professional Program"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title text-xl font-extrabold text-white">
+                Professional Program
+              </h2>
+              <p class="text-xs font-medium text-white">
+                If a dog chews shoes whose shoes does he choose?
+              </p>
+              <div class="card-actions">
+                <button class="btn btn-error text-white">Register Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+<!-- footer start -->
+    <footer class="footer p-10 bg-neutral text-neutral-content">
+  <nav>
+    <header class="footer-title">Services</header> 
+    <a class="link link-hover">Branding</a>
+    <a class="link link-hover">Design</a>
+    <a class="link link-hover">Marketing</a>
+    <a class="link link-hover">Advertisement</a>
+  </nav> 
+  <nav>
+    <header class="footer-title">Company</header> 
+    <a class="link link-hover">About us</a>
+    <a class="link link-hover">Contact</a>
+    <a class="link link-hover">Jobs</a>
+    <a class="link link-hover">Press kit</a>
+  </nav> 
+  <nav>
+    <header class="footer-title">Legal</header> 
+    <a class="link link-hover">Terms of use</a>
+    <a class="link link-hover">Privacy policy</a>
+    <a class="link link-hover">Cookie policy</a>
+  </nav>
+</footer>
   </body>
 </html>
